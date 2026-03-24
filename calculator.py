@@ -26,8 +26,6 @@ if op == "*":
     print("Your result is : ",a*b)
 
 if op == "/":
-    if a == 0:
-        print("Error")
     if b == 0:
         print("Error")
     else:

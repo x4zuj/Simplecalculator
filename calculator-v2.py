@@ -19,7 +19,7 @@ while True: # we keep it running cause you might want to calculate more often
             elif op == "*":
                 result = a * b
             elif op == "/":
-                if a or b == 0: # this prevents having 2 error messages
+                if b == 0: # this prevents having 2 error messages
                     return "Division by 0 is not allowed >:(" 
                     #       ^ we get angry and return this string instead
                 result = a / b
