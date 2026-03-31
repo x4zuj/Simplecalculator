@@ -7,16 +7,20 @@ print("\nWelcome to the calculator!\n")
 # Here is the code asking for the Numbers that should be used to calculate.
 
 def addition(first_calculating_number, second_calculating_number):
-    print("Your result is:\n> ",first_calculating_number+second_calculating_number,"\n")
+    result = first_calculating_number + second_calculating_number
+    return result
 
 def subtraction(first_calculating_number, second_calculating_number):
-    print("Your result is:\n> ",first_calculating_number-second_calculating_number,"\n")
+    result = first_calculating_number - second_calculating_number
+    return result
 
 def multiplication(first_calculating_number, second_calculating_number):
-    print("Your result is:\n> ",first_calculating_number*second_calculating_number,"\n")
+    result = first_calculating_number * second_calculating_number
+    return result
 
 def division(first_calculating_number, second_calculating_number):
-    print("Your result is:\n> ",first_calculating_number/second_calculating_number,"\n")
+    result = first_calculating_number / second_calculating_number
+    return result
 
 while True:
     first_number = float(input("First Number to calculate?: "))
@@ -26,13 +30,15 @@ while True:
     operator = input("> ")
 
     if operator == "+":
-        addition(first_calculating_number = first_number, second_calculating_number = second_number)
+        result = addition(first_calculating_number = first_number, second_calculating_number = second_number)
 
     elif operator == "-":
-        subtraction(first_calculating_number = first_number, second_calculating_number = second_number)
+        result = subtraction(first_calculating_number = first_number, second_calculating_number = second_number)
         
     elif operator == "*":
-        multiplication(first_calculating_number = first_number, second_calculating_number = second_number)
+        result = multiplication(first_calculating_number = first_number, second_calculating_number = second_number)
 
     elif operator == "/":
-        division(first_calculating_number = first_number, second_calculating_number = second_number)
+        result = division(first_calculating_number = first_number, second_calculating_number = second_number)
+
+    print(result)
