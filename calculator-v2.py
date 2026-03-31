@@ -41,4 +41,4 @@ while True:
     elif operator == "/":
         result = division(first_calculating_number = first_number, second_calculating_number = second_number)
 
-    print(result)
+    print(f"Your result is:\n> {result}\n")
